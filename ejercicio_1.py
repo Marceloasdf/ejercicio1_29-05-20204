@@ -1,6 +1,7 @@
 import os
 import time
 import msvcrt
+usuarios=[]
 while True:
     print("""
     1) inicio sesion.
@@ -12,7 +13,14 @@ while True:
     if opc==1:
         pass
     elif opc==2:
-        pass
+        print("Registrar usuario")
+        nombre= input("nombre: ")
+        contrasena =input("contraseña: ")
+        usuario ={
+            "nombre": nombre,
+            "contrasena": contrasena,}
+        usuarios.append(usuario)
+        print("Usuario guardado exitosamente!")
     elif opc==3:
         pass
     else:
